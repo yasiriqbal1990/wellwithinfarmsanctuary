@@ -38,7 +38,7 @@ Build the application for production:
 
 ```bash
 # npm
-npx nuxi generate
+npm run build
 
 # pnpm
 pnpm run build
