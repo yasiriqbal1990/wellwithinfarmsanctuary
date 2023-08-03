@@ -1,64 +1,63 @@
-# Eleventy Project
+# Nuxt 3 Minimal Starter
 
-## Introduction
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-This guide will walk you through setting up and starting an Eleventy project. Eleventy is a simple static site generator that allows you to build static websites using various templating languages.
+## Setup
 
-## Prerequisites
+Make sure to install the dependencies:
 
-Before starting with Eleventy, make sure you have the following installed:
+```bash
+# npm
+npm install
 
-- Node.js: Eleventy requires Node.js to be installed on your machine. You can download and install Node.js from the official website: [https://nodejs.org](https://nodejs.org)
+# pnpm
+pnpm install
 
-## Getting Started
+# yarn
+yarn install
+```
 
-1. Create a new directory for your Eleventy project.
-2. Open a terminal or command prompt and navigate to the project directory.
+## Development Server
 
-## Project Initialization
+Start the development server on `http://localhost:3000`:
 
-1. Initialize a new Node.js project by running the following command in your project directory:
+```bash
+# npm
+npm run dev
 
-`npm install`
+# pnpm
+pnpm run dev
 
-2. Install Eleventy as a dev dependency by running the following command:
+# yarn
+yarn dev
+```
 
-`npm install --save-dev @11ty/eleventy`
+## Production
 
-## Building and Running the Project
+Build the application for production:
 
-Eleventy provides npm scripts that make it easy to build and run your project.
+```bash
+# npm
+npm run build
 
-To build your project, run the following command:
+# pnpm
+pnpm run build
 
-`npm run build`
+# yarn
+yarn build
+```
 
-To start a local development server and watch for changes, run the following command:
+Locally preview production build:
 
-`npm start`
+```bash
+# npm
+npm run preview
 
-Eleventy will compile your templates and generate the output files in the specified output directory (default: \_site).
-use this folder for your server
+# pnpm
+pnpm run preview
 
-Congratulations! You've set up an Eleventy project. You can now start creating your templates and content.
+# yarn
+yarn preview
+```
 
-## Structure of the app
-
-\Src->
-\includes
-
-- \layouts
-
-  -base.layout # this is basic layout which your index.html is using
-
-- footer.html # this is your seperated footer include
-
-- header.html # this is your seperated header file nav in there
-
-index.html # this file this main content file basic this the part of where your content is this part between header and footer
-
-if you want to create more files just copy this index file and change stuff in the new file.
-
-make sure in first line you inlude the base.html just like index.html
-
-For more information and advanced usage of Eleventy, refer to the official Eleventy documentation: https://www.11ty.dev/docs/
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
