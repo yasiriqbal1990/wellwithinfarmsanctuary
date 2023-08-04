@@ -2,8 +2,6 @@
 import { QuillEditor } from '@vueup/vue-quill'
 import '@vueup/vue-quill/dist/vue-quill.snow.css'
 import BlotFormatter from 'quill-blot-formatter'
-
-// import { doc,getDoc, updateDoc } from "firebase/firestore"
 import useBlogResource from "../composables/useSingleBlog"
 
 const nuxtApp:any = useNuxtApp()
@@ -65,6 +63,7 @@ router.push('/manage-blogs')
 
 </script>
 <template>
+  <ClientOnly>
     <form  method="POST" @submit.prevent="update" class="mx-auto mt-10 max-w-xl sm:mt-14">
     <div class="sm:col-span-2 mt-6">
         <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Title: </label>
@@ -87,7 +86,7 @@ router.push('/manage-blogs')
       <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Update</button>
     </div>
   </form>
-
+</ClientOnly>
   </template>
   
 
