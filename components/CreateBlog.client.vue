@@ -2,14 +2,13 @@
 import { QuillEditor } from '@vueup/vue-quill'
 import '@vueup/vue-quill/dist/vue-quill.snow.css'
 import BlotFormatter from 'quill-blot-formatter'
-import { addDoc, collection } from "firebase/firestore"
-const router:any = useRouter()
 
+// import { addDoc, collection } from "firebase/firestore"
+const router:any = useRouter()
 const title = ref<string>("")
 const subject = ref<string>("")
 const body = ref<string>("")
-
-const nuxtApp = useNuxtApp()
+const nuxtApp:any = useNuxtApp()
 
 
 const modules = [{
@@ -26,8 +25,7 @@ const postBlog = async() =>{
 
   
 try {
-  //@ts-ignore
-  const blogRef = await addDoc(collection(db, 'blogs'), {
+  const blogRef = await nuxtApp.$addDoc(nuxtApp.$collection(db, 'blogs'), {
   title:title.value,
   subject: subject.value,
   body:body.value
@@ -67,7 +65,7 @@ const handleImageAdded = async(image:any)=>{
       </div>
       <div class="sm:col-span-2 mt-6 mb-2">
         <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Body: </label>
-    <QuillEditor theme="snow" :modules="modules" toolbar="full" v-model:content="body" contentType="html" placeholder="Write here"/>
+    <QuillEditor theme="snow" :modules="modules" toolbar="full" :content="body" contentType="html" placeholder="Write here"/>
  </div>
  <div class="mt-10 mb-20">
       <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Submit</button>

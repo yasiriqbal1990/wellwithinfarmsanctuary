@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { doc,deleteDoc } from "firebase/firestore"
+
 import type Blog from "../types/Blog"
 
 const nuxtApp:any = useNuxtApp()
@@ -11,18 +11,15 @@ const props = defineProps<{
 const deleteBlog = async(blogId:string)=>{
 
     try {
-    deleteDoc(doc(nuxtApp.$db, "blogs", blogId))
-    location.reload();
+       await nuxtApp.$deleteDoc(nuxtApp.$doc(nuxtApp.$db, "blogs", blogId))
+        location.reload();
   } catch (error) {
     console.log(error)
   }
 
 }
-
-
 </script>
 <template>
-
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-10">
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">

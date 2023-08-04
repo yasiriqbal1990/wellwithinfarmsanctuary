@@ -38,26 +38,17 @@ Build the application for production:
 
 ```bash
 # npm
-npm run build
+npx nuxi generate
 
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
 ```
 
 Locally preview production build:
 
 ```bash
 # npm
-npm run preview
 
-# pnpm
-pnpm run preview
+npx serve .output/public
 
-# yarn
-yarn preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

@@ -42,7 +42,7 @@
         </div>
         <PopoverGroup class="hidden lg:flex lg:gap-x-12">  
           <NuxtLink to="/" class="text-sm font-semibold leading-6 text-gray-900">Home</NuxtLink>
-          <NuxtLink to="/manage-blogs/add-blog" class="text-sm font-semibold leading-6 text-gray-900">Blog</NuxtLink>
+          <NuxtLink to="/manage-blogs/add-blog" class="text-sm font-semibold leading-6 text-gray-900">Create a Blog</NuxtLink>
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About</a>
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
         </PopoverGroup>
@@ -66,8 +66,8 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Blog</a>
+                <NuxtLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</NuxtLink>
+                <NuxtLink to="/manage-blogs/add-blog" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Create a Blog</NuxtLink>
                 <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
                 <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
               </div>
