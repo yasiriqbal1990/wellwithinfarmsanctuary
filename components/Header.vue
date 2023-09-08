@@ -41,10 +41,18 @@
           </button>
         </div>
         <PopoverGroup class="hidden lg:flex lg:gap-x-12">  
-          <NuxtLink to="/blogs/" class="text-sm font-semibold leading-6 text-gray-900">Home</NuxtLink>
-          <NuxtLink to="/manage-blogs/add-blog" class="text-sm font-semibold leading-6 text-gray-900">Create a Blog</NuxtLink>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
+          <NuxtLink to="/blogs/" class="text-sm font-semibold leading-6 text-gray-900 hover:underline">About</NuxtLink>
+          <NuxtLink to="/manage-blogs/add-blog" class="text-sm font-semibold leading-6 text-gray-900">Shop</NuxtLink>
+          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Blog</NuxtLink>
+          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Events</NuxtLink>
+          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Donate</NuxtLink>
+          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Testimonials</NuxtLink>
+          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Gallery</NuxtLink>
+          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">FAQ</NuxtLink>
+          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Contact Us</NuxtLink>
+
+
+
         </PopoverGroup>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <NuxtLink to="/manage-blogs" class="text-sm font-semibold leading-6 text-gray-900">Manage Blogs <span aria-hidden="true">&rarr;</span></NuxtLink>
@@ -66,13 +74,20 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
-                <NuxtLink to="/blogs/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</NuxtLink>
-                <NuxtLink to="/manage-blogs/add-blog" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Create a Blog</NuxtLink>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
+                <NuxtLink to="/blogs/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</NuxtLink>
+                <NuxtLink to="/manage-blogs/add-blog" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Shop</NuxtLink>
+                <NuxtLink href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Blog</NuxtLink>
+                <NuxtLink href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Events</NuxtLink>
+                <NuxtLink href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Donate</NuxtLink>
+                <NuxtLink href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Testimonials</NuxtLink>
+                <NuxtLink href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Gallery</NuxtLink>
+                <NuxtLink href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">FAQ</NuxtLink>
+                <NuxtLink href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact Us</NuxtLink>
+
+
               </div>
               <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                <NuxtLink to="/manage-blogs" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Manage Blogs</NuxtLink>
               </div>
             </div>
           </div>
