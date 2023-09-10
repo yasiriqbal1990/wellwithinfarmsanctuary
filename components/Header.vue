@@ -31,7 +31,7 @@
         <div class="flex lg:flex-1">
           <NuxtLink to="/" class="-m-1.5 p-1.5">
             <span class="sr-only">Well Within Farm Sancturay</span>
-            <img class="h-20 w-auto" src="/images/logo.png" alt="Well WithinFarmSancturay" />
+            <img class="h-20 w-auto" src="/images/logo.PNG" alt="Well WithinFarmSancturay" />
           </NuxtLink>
         </div>
         <div class="flex lg:hidden">
