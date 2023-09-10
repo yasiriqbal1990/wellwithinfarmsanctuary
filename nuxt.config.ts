@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@":resolve(__dirname,"/")
   },
   css:[
+    '@fortawesome/fontawesome-svg-core/styles.css',
     "~/assets/css/main.css"
   ],
   postcss: {
@@ -14,6 +15,14 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  modules: ['nuxt-swiper'],
+  swiper: {
+    // Swiper options
+    //----------------------
+    // prefix: 'Swiper',
+    //styleLang: 'css',
+    modules: ['navigation', 'pagination'], // all modules are imported by default
   },
   ssr: false
 
