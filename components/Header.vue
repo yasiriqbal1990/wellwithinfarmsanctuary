@@ -29,10 +29,10 @@
     <header class="bg-white">
       <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-          </a>
+          <NuxtLink to="/" class="-m-1.5 p-1.5">
+            <span class="sr-only">Well Within Farm Sancturay</span>
+            <img class="h-20 w-auto" src="/images/logo.png" alt="Well WithinFarmSancturay" />
+          </NuxtLink>
         </div>
         <div class="flex lg:hidden">
           <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = true">
@@ -40,22 +40,22 @@
             <Bars3Icon class="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <PopoverGroup class="hidden lg:flex lg:gap-x-12">  
-          <NuxtLink to="/blogs/" class="text-sm font-semibold leading-6 text-gray-900 hover:underline">About</NuxtLink>
-          <NuxtLink to="/manage-blogs/add-blog" class="text-sm font-semibold leading-6 text-gray-900">Shop</NuxtLink>
-          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Blog</NuxtLink>
-          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Events</NuxtLink>
-          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Donate</NuxtLink>
-          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Testimonials</NuxtLink>
-          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Gallery</NuxtLink>
-          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">FAQ</NuxtLink>
-          <NuxtLink to="#" class="text-sm font-semibold leading-6 text-gray-900">Contact Us</NuxtLink>
+        <PopoverGroup class="hidden lg:flex lg:gap-x-12 lg:mr-10">  
+          <NuxtLink to="#" class="text-lg font-bold leading-6 text-gray-900 hover:underline">About</NuxtLink>
+          <NuxtLink to="#" class="text-lg font-bold leading-6 text-gray-900 hover:underline">Shop</NuxtLink>
+          <NuxtLink to="/blogs/" class="text-lg font-bold leading-6 text-gray-900 hover:underline">Blog</NuxtLink>
+          <NuxtLink to="#" class="text-lg font-bold leading-6 text-gray-900 hover:underline">Events</NuxtLink>
+          <NuxtLink to="#" class="text-lg font-bold leading-6 text-gray-900 hover:underline">Donate</NuxtLink>
+          <NuxtLink to="#" class="text-lg font-bold leading-6 text-gray-900 hover:underline">Testimonials</NuxtLink>
+          <NuxtLink to="#" class="text-lg font-bold leading-6 text-gray-900 hover:underline">Gallery</NuxtLink>
+          <NuxtLink to="#" class="text-lg font-bold leading-6 text-gray-900 hover:underline">FAQ</NuxtLink>
+          <NuxtLink to="#" class="text-lg font-bold leading-6 text-gray-900 hover:underline">Contact</NuxtLink>
 
 
 
         </PopoverGroup>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NuxtLink to="/manage-blogs" class="text-sm font-semibold leading-6 text-gray-900">Manage Blogs <span aria-hidden="true">&rarr;</span></NuxtLink>
+        <div class="hidden text-lg lg:flex lg:justify-end lg:ml-4">
+          <NuxtLink to="/manage-blogs" class="text-lg font-bold leading-6 text-gray-900 hover:underline">Manage Blogs<span aria-hidden="true">&rarr;</span></NuxtLink>
         </div>
       </nav>
       <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
